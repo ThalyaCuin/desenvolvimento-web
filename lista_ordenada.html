@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "description" content="Aula Comentários, Metadados, Listas e Layout">
+    <meta name= "keywords" content= "HTML, Comentários, Metadados, Listas, Layout,
+    Elementos Semânticos">
+    <meta name= "author" content= "Thalya Cuin">
+    <title>Aula 5</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="Favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="acessibilidade"></div>
+    <ul id="atalhos">
+        <li><a href="#conteudo" accesskey="1" title="ir diretamente para o conteudo">
+            ir para o conteudo[1]</a></li>
+            <li><a href="#menu" accesskey="2" title="ir diretamente para o menu">
+              ir para o menu[2]</a></li>
+              <li><a href="#rodape" accesskey="3" title="ir diretamente para o rodape">
+                  ir para o rodape[3]</a></li>
+
+                  <li id="pgacess"><a href="acessibilidade.html" title="ir para a pagina
+                      de acessibilidade">ACESSIBILIDADE</a></li>
+                      <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                      <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                      <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                      <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+
+    </ul>
+    <header id="topo"><!--Topo da Página-->
+        <img id="topo_css_um"src="imagem/logo_fatec_branco.png" alt="Imagem com a palavra
+        Fatec Zona Leste em Branco">
+        <img id="topo_css_dois" src="imagem/2020_logo_cps_gov_sec_versao_horizontal.png" alt="Imagem com o
+        logo Fatec Zona Leste e Governo do Estado de São Paulo em Branco">
+         <nav>
+            <label for="bt_menu"><img src="imagem/menu3.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
+            <ul id="menu">
+                 <li><a  href="index.html">Inicio</a></li> 
+                 <li><a  href="comentarios.html">Comentários</a></li>
+                 <li><a  href="metadados.html">Metadados</a></li>
+                 <li><a  href="javascript:void(0);">Listas</a>
+                     <ul>
+                         <li><a  href="lista_ordenada.html">Lista Ordenada</a></li>
+                         <li><a  href="lista_nao_ordenada.html">Lista nao Ordenada</a></li>
+                     </ul>
+                </li>
+                 <li><a  href="layout.html">Layout</a></li>
+                 <li><a  href="contato.html">Contato</a></li>
+             </ul>
+         </nav>
+         <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+    </header>
+    <main class="conteudo"><!--Conteúdo Principal da página-->
+        <h1>LISTA ORDENADA</h1>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="javascript:void(0)">Listas</a></li>
+            <li>Lista ordenada</li>
+        </ul>
+        <section>
+            <audio controls>
+                <source src="audio/lista ordenada.m4a" type="audio/mp3">
+                Este navegador não suporta o elemento audio ou o formado de arquivo utilizado.
+            </audio>
+        <p class="Conteudo">Uma lista ordenada começa com a tag &lt;ol&gt;.Cada item da lista começa com a 
+        tag &lt;li&gt;.</p>
+         <img id="imagem" src="imagem/ol.png" alt="imagem com conteúdo explicativo sobre
+         lista ordenada em HTML">
+        </section>
+    </main>
+    <footer id="rodape"><p>Desenvolvido por Thalya Cuin &copy; 2021.</p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="CSS válido!" />
+            </a>
+        </p>
+    </footer><!--Rodapé da
+    página--> 
+</body>
+</html>
